@@ -39,32 +39,44 @@ print(f'A room thats {length} feet long and {width} feet wide \nhas an area of {
 # Practice 3
 print()
 #Part 1
+
+#Message
 text = "I am {0} and I am {1} years old\nMy favorite color is {2}."
 
+#Inputted Variables
 name = input("Enter your name: \n")
 age = int(input('Enter your age: \n'))
 fav_color = input('Eneter your favorite color: \n')
 
+#Formatted text
 text = text.format(name.capitalize(), age, fav_color.lower())
+#Final Message printed
 print(text)
 
 # Part 2
 print()
 
+#Sales tax constant
 STATE_SALES_TAX = 1.06
 
+#Price input
 price = float(input('Enter price for the item: $'))
 
+#Calculating total
 grand_total = price*STATE_SALES_TAX
 
+#Output showing item cost before and after taxes
 print(f'Your item cost of ${price:.2f} is a total of ${grand_total:.2f} after taxes.')
 
 # Part 3
 print()
 
+#Friend's information inputs
 friends_name = input('Enter your friend\'s name: \n')
 friends_school = input("Enter your friend\'s school: \n")
 
+#Text message and formatted
 text = 'My friend {0} goes to {1}'.format(friends_name, friends_school)
 
+#printed final message
 print(text)
